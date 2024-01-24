@@ -1,0 +1,234 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/saira-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/saira-v19-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v30-cyrillic_latin-900.woff2') format('woff2');
+}
+/* All colors */
+:root {
+  --primary-color-white: #ffffff;
+  --brand-color-light: #2b7fff;
+  --brand-color-dark: #011c44;
+  --secondary-color-dark: #4a4a4a;
+  --secondary-color-light: #747272;
+  --secondary-color-brand-dark: #011f4a;
+  --secondary-color-yellow: #ffd02b;
+  --secondary-color-black: #000000;
+}
+/* =========================================MAIN */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+  color: var(--brand-color-dark);
+  /*background for comfortable wathing light items, will be deleted in future*/
+  background-color: rgb(187, 242, 250); /*<<<====WARNING!!!*/
+  /*background for comfortable wathing light items, will be deleted in future*/
+}
+ul {
+  list-style-type: none;
+}
+
+/* ========================================HEADER */
+.header-link-menu {
+  text-decoration: none;
+  color: var(--brand-color-dark);
+}
+.header-link-menu:hover {
+  cursor: pointer;
+  color: var(--brand-color-light);
+  font-weight: 700;
+}
+
+/* =====================================HERO-SECTION */
+.hero-title {
+  color: var(--brand-color-light);
+  font-family: play;
+  font-size: 140px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 0.8;
+}
+.order-call-button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.17;
+  color: var(--primary-color-white);
+  background-color: var(--brand-color-light);
+  border: 2px solid transparent;
+  border-radius: 32px;
+}
+.order-call-button:hover {
+  color: var(--brand-color-dark);
+  background-color: transparent;
+  border: 2px solid var(--brand-color-light);
+  cursor: pointer;
+}
+.after-button-text {
+  color: var(--secondary-color-dark);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ====================================NEXT SECTIONS */
+.section-title {
+  font-family: play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.section-title span {
+  color: var(--brand-color-light);
+}
+
+/* ====================================ABOUTUS SECTION */
+.aboutus-title span {
+  text-transform: capitalize;
+}
+.aboutus-text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+.aboutus-text span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* =====================================WHYWE SECTION */
+.whywe-text {
+  color: var(--secondary-color-black);
+  line-height: 1.33;
+}
+
+/* =================================PROCEDURES SECTION */
+.procedures-title {
+  color: var(--primary-color-white);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+/* ==================================HOWFIND SECTION */
+.main-map {
+  border-radius: 32px;
+}
+
+/* ==========================================FOOTER */
+footer {
+  background-color: var(--brand-color-dark);
+}
+.footer-link-menu {
+  color: var(--primary-color-white);
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-link-menu:hover {
+  /*<---Maybe deleted*/
+  cursor: pointer;
+  color: var(--brand-color-light);
+}
+.address-item {
+  color: var(--primary-color-white);
+  font-size: 16px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-item:hover {
+  /*<---Maybe deleted*/
+  cursor: pointer;
+  color: var(--brand-color-light);
+}
+.privacy-policy {
+  color: var(--primary-color-white);
+  font-size: 16px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.privacy-policy:hover {
+  /*<---Maybe deleted*/
+  cursor: pointer;
+  color: var(--brand-color-light);
+}
+.copyright {
+  color: var(--secondary-color-light);
+  font-size: 13px;
+}
