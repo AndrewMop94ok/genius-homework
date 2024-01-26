@@ -101,6 +101,7 @@ ul {
 }
 
 /* ========================================HEADER */
+/* in future here will be bgc RGBA */
 .header-link-menu {
   text-decoration: none;
   color: var(--brand-color-dark);
@@ -127,13 +128,12 @@ ul {
   line-height: 1.17;
   color: var(--primary-color-white);
   background-color: var(--brand-color-light);
-  border: 2px solid transparent;
+  border: 2px solid var(--brand-color-light);
   border-radius: 32px;
 }
 .order-call-button:hover {
   color: var(--brand-color-dark);
   background-color: transparent;
-  border: 2px solid var(--brand-color-light);
   cursor: pointer;
 }
 .after-button-text {
