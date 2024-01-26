@@ -195,9 +195,9 @@ footer {
   text-decoration: none;
 }
 .footer-link-menu:hover {
-  /*<---Maybe deleted*/
   cursor: pointer;
   color: var(--brand-color-light);
+  font-weight: 700;
 }
 .address-item {
   color: var(--primary-color-white);
@@ -207,9 +207,9 @@ footer {
 }
 
 .address-item:hover {
-  /*<---Maybe deleted*/
   cursor: pointer;
   color: var(--brand-color-light);
+  font-weight: 700;
 }
 .privacy-policy {
   color: var(--primary-color-white);
@@ -219,9 +219,9 @@ footer {
 }
 
 .privacy-policy:hover {
-  /*<---Maybe deleted*/
   cursor: pointer;
   color: var(--brand-color-light);
+  font-weight: 700;
 }
 .copyright {
   color: var(--secondary-color-light);
