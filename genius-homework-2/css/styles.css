@@ -152,6 +152,10 @@ ul {
 }
 .header-icon {
   fill: var(--brand-color-dark);
+  cursor: pointer;
+}
+.header-icon:hover {
+  fill: var(--brand-color-light);
 }
 /* in future here will be bgc RGBA */
 .header-link-menu {
@@ -197,13 +201,13 @@ ul {
   margin-bottom: 40px;
 }
 .order-call-button {
+  color: var(--primary-color-white);
+  background-color: var(--brand-color-light);
   padding: 16px 32px;
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.17;
-  color: var(--primary-color-white);
-  background-color: var(--brand-color-light);
   border: 2px solid var(--brand-color-light);
   border-radius: 32px;
   margin-bottom: 14px;
@@ -239,6 +243,7 @@ ul {
 /* ====================================ABOUTUS SECTION */
 .aboutus-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 .aboutus-items {
@@ -273,15 +278,14 @@ ul {
 .aboutus-photo {
   width: 100%;
   max-width: 327px;
-  border-radius: 170px;
+  border-radius: 50%;
 }
 .photo-after {
   display: flex;
   justify-content: end;
 }
 /* =====================================WHYWE SECTION */
-.whywe-section {
-}
+
 .center-gradient {
   background: linear-gradient(
     180deg,
@@ -292,10 +296,12 @@ ul {
 }
 .whywe-content {
   display: flex;
-  gap: 56px;
+  flex-wrap: wrap;
+  gap: 120px;
   justify-content: center;
 }
 .whywe-item {
+  flex-basis: calc((100% - 176px) / 3);
   background-color: var(--primary-color-white);
   display: flex;
   flex-direction: column;
@@ -316,26 +322,44 @@ ul {
 }
 
 /* =================================PROCEDURES SECTION */
-.procedures-section {
-}
 .procedures-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: 0.77px solid var(--brand-color-dark);
+  border-radius: 50%;
+  cursor: pointer;
+  fill: var(--brand-color-dark);
+}
+.carousel-button.accent {
+  transform: rotate(180deg);
+}
+.carousel-button:hover {
+  background-color: var(--brand-color-light);
+  fill: var(--primary-color-white);
+  border: 0.77px solid transparent;
 }
 .procedures-cards {
   display: flex;
-  flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
 }
-.procedures-title {
-  /* width: 344px;
-  height: 456px; */
-  color: var(--primary-color-white);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.18;
-  text-align: center;
+.procedures-items {
+  flex-basis: calc((100% - 32px) / 3);
+}
+.procedures-content {
+  height: 456px;
   padding: 372px 77px 32px 115px;
   border-radius: 4px 120px;
   background: linear-gradient(
@@ -344,6 +368,14 @@ ul {
     rgba(1, 28, 68, 0.725825) 84.61%,
     #011c44 101.39%
   );
+}
+.procedures-title {
+  /* height: 456px; */
+  color: var(--primary-color-white);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.18;
+  text-align: center;
 }
 .procedures-item {
   width: 100%;
@@ -354,14 +386,20 @@ ul {
 .mask-background {
   background-image: url(./../images/mask-photo.jpg);
   border-radius: 4px 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .injection-background {
   background-image: url(./../images/injection-photo.jpg);
   border-radius: 4px 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cleanface-background {
   background-image: url(./../images/cleanface-photo.jpg);
   border-radius: 4px 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* ==================================HOWFIND SECTION */
 .main-map {
@@ -426,6 +464,10 @@ footer {
 }
 .footer-icon {
   fill: var(--primary-color-white);
+  cursor: pointer;
+}
+.footer-icon:hover {
+  fill: var(--brand-color-light);
 }
 .footer-privacy {
   display: flex;
