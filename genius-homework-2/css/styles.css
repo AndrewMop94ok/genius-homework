@@ -170,7 +170,7 @@ ul {
 
 /* =====================================HERO-SECTION */
 .hero-section {
-  background-image: url(./../images/hero-background-img.jpg);
+  background-image: url(./../images/hero-background-img.png);
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 1440px;
@@ -241,6 +241,9 @@ ul {
 }
 
 /* ====================================ABOUTUS SECTION */
+.aboutus-section {
+  /* padding-bottom: 176px; */
+}
 .aboutus-container {
   display: flex;
   flex-wrap: wrap;
@@ -285,14 +288,13 @@ ul {
   justify-content: end;
 }
 /* =====================================WHYWE SECTION */
-
 .center-gradient {
-  background: linear-gradient(
-    180deg,
-    rgba(43, 127, 255, 0.2) 20%,
-    rgba(43, 127, 255, 0) 54.16%,
-    rgba(43, 127, 255, 0) 66.66%
-  );
+  background-image: url(./../images/center-background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.whywe-section {
+  padding-top: 176px;
 }
 .whywe-content {
   display: flex;
