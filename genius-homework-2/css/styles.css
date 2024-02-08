@@ -88,6 +88,7 @@
   --secondary-color-yellow: #ffd02b;
   --secondary-color-black: #000000;
   --whywesection-shadow-color: #a8c6f5;
+  --header-background-color: rgba(255, 255, 255, 0.25);
 }
 /* =========================================MAIN */
 *,
@@ -130,6 +131,14 @@ ul {
 }
 
 /* ========================================HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px 100px;
+  background: var(--header-background-color);
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -143,7 +152,7 @@ ul {
 .header-menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 56px;
   flex-grow: 1;
 }
 .header-soclink {
@@ -169,12 +178,10 @@ ul {
 }
 
 /* =====================================HERO-SECTION */
-.hero-section {
+.hero-background {
   background-image: url(./../images/hero-background-img.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  background-size: cover;
 }
 .hero-gradient {
   background: linear-gradient(
@@ -186,6 +193,8 @@ ul {
   );
 }
 .hero-container {
+  display: flex;
+  flex-direction: column;
   padding: 122px 605px 126px 106px;
 }
 .hero-text {
@@ -241,13 +250,11 @@ ul {
 }
 
 /* ====================================ABOUTUS SECTION */
-.aboutus-section {
-  /* padding-bottom: 176px; */
-}
 .aboutus-container {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  position: relative;
 }
 .aboutus-items {
   width: 100%;
@@ -283,15 +290,39 @@ ul {
   max-width: 327px;
   border-radius: 50%;
 }
+.photo-before {
+  display: flex;
+}
 .photo-after {
   display: flex;
   justify-content: end;
 }
+.star-icon {
+  position: absolute;
+  left: 1212px;
+  top: 32px;
+  transform: rotate(-30deg);
+  fill: var(--brand-color-light);
+}
+.star-icon-small {
+  position: absolute;
+  left: 1213px;
+  top: 269px;
+  transform: rotate(23deg);
+  fill: var(--secondary-color-light);
+}
+.star-icon-big {
+  position: absolute;
+  left: 858px;
+  top: 336px;
+  fill: var(--secondary-color-brand-dark);
+  /* transform: rotate( 30deg); */
+}
 /* =====================================WHYWE SECTION */
 .center-gradient {
   background-image: url(./../images/center-background.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
 }
 .whywe-section {
   padding-top: 176px;
@@ -404,13 +435,67 @@ ul {
   background-size: cover;
 }
 /* ==================================HOWFIND SECTION */
+.howfind-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .main-map {
   border-radius: 32px;
+}
+.modal {
+  background-color: var(--brand-color-dark);
+  width: 100%;
+  max-width: 423px;
+  padding: 48px 56px;
+  border-radius: 32px;
+  height: 481px;
+}
+.modal-background {
+  background-image: url(./../images/modal-background.png);
+}
+.modal-title {
+  color: var(--primary-color-white);
+  width: 100%;
+  max-width: 274px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 18px 32px 18px;
+}
+.modal-title span {
+  color: var(--brand-color-light);
+}
+.modal-item {
+  color: var(--primary-color-white);
+  padding: 18px 32px;
+  border: 2px solid var(--secondary-color-light);
+  border-radius: 32px;
+  margin-bottom: 16px;
+}
+.modal-button {
+  margin: 0 13px;
+}
+.modal-button:hover {
+  color: var(--primary-color-white);
+}
+.modal-privacy {
+  color: var(--secondary-color-light);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  max-width: 213px;
+  margin: 8px 48px 0 48px;
 }
 
 /* ==========================================FOOTER */
 footer {
   background-color: var(--brand-color-dark);
+}
+.footer-background {
+  background-image: url(./../images/footer-background.png);
 }
 .footer-container {
   display: flex;
