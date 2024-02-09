@@ -446,15 +446,18 @@ header {
   border-radius: 32px;
 }
 .modal {
-  background-color: var(--brand-color-dark);
   width: 100%;
   max-width: 423px;
   padding: 48px 56px;
-  border-radius: 32px;
-  height: 481px;
+  height: 385px;
 }
 .modal-background {
+  background-color: var(--brand-color-dark);
+  border-radius: 32px;
+}
+.modal-background-img {
   background-image: url(./../images/modal-background.png);
+  border-radius: 32px;
 }
 .modal-title {
   color: var(--primary-color-white);
@@ -469,6 +472,7 @@ header {
   color: var(--brand-color-light);
 }
 .modal-item {
+  font-size: 13px;
   color: var(--primary-color-white);
   padding: 18px 32px;
   border: 2px solid var(--secondary-color-light);
@@ -489,6 +493,12 @@ header {
   width: 100%;
   max-width: 213px;
   margin: 8px 48px 0 48px;
+}
+.modal-privacy-link {
+  color: var(--secondary-color-light);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* ==========================================FOOTER */
