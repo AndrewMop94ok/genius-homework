@@ -181,7 +181,8 @@ header {
 .hero-background {
   background-image: url(./../images/hero-background-img.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  max-width: 1488px;
 }
 .hero-gradient {
   background: linear-gradient(
