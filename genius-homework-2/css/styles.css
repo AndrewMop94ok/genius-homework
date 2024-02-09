@@ -183,6 +183,7 @@ header {
   background-repeat: no-repeat;
   background-size: auto;
   max-width: 1488px;
+  margin: 0 auto;
 }
 .hero-gradient {
   background: linear-gradient(
@@ -322,7 +323,6 @@ header {
 /* =====================================WHYWE SECTION */
 .center-gradient {
   background-image: url(./../images/center-background.png);
-  background-size: cover;
   background-repeat: no-repeat;
 }
 .whywe-section {
