@@ -127,7 +127,7 @@ ul {
   padding: 0;
 }
 .section {
-  padding-bottom: 96px;
+  margin-bottom: 96px;
 }
 
 /* ========================================HEADER */
@@ -162,14 +162,24 @@ header {
 .header-icon {
   fill: var(--brand-color-dark);
   cursor: pointer;
+  transition: fill 0.2s;
 }
 .header-icon:hover {
   fill: var(--brand-color-light);
 }
-/* in future here will be bgc RGBA */
+.header-link-item {
+  min-width: 80px;
+  transition: 0.2s;
+}
+.header-link-item.accent {
+  min-width: 140px;
+}
+.header-link-item:hover {
+}
 .header-link-menu {
   text-decoration: none;
   color: var(--brand-color-dark);
+  transition: color 0.2s;
 }
 .header-link-menu:hover {
   cursor: pointer;
@@ -235,6 +245,7 @@ header {
   width: 100%;
   max-width: 238px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 /* ====================================NEXT SECTIONS */
@@ -324,6 +335,7 @@ header {
 .center-gradient {
   background-image: url(./../images/center-background.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .whywe-section {
   padding-top: 176px;
@@ -338,6 +350,7 @@ header {
   flex-basis: calc((100% - 176px) / 3);
   background-color: var(--primary-color-white);
   display: flex;
+  gap: 8px;
   flex-direction: column;
   align-items: center;
   border-radius: 32px;
