@@ -175,12 +175,10 @@ header {
 .header-link-item.accent {
   min-width: 140px;
 }
-.header-link-item:hover {
-}
 .header-link-menu {
   text-decoration: none;
   color: var(--brand-color-dark);
-  transition: color 0.2s;
+  transition: font-weight 0.2s, color 0.2s;
 }
 .header-link-menu:hover {
   cursor: pointer;
@@ -557,7 +555,7 @@ footer {
   color: var(--primary-color-white);
   font-size: 16px;
   text-decoration: none;
-  transition: 0.2s;
+  transition: font-weight 0.2s, color 0.2s;
 }
 .footer-link-menu:hover {
   cursor: pointer;
@@ -569,7 +567,7 @@ footer {
   font-size: 16px;
   text-decoration: none;
   font-style: normal;
-  transition: 0.2s;
+  transition: font-weight 0.2s, color 0.2s;
 }
 
 .address-item:hover {
@@ -600,7 +598,7 @@ footer {
   font-size: 16px;
   text-decoration: none;
   font-style: normal;
-  transition: 0.2s;
+  transition: font-weight 0.2s, color 0.2s;
 }
 
 .privacy-policy:hover {
