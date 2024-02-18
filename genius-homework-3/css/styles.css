@@ -507,6 +507,8 @@ header {
 }
 .main-map {
   border-radius: 32px;
+  height: auto;
+  min-height: 481px;
 }
 .modal-background {
   background-color: var(--brand-color-dark);
