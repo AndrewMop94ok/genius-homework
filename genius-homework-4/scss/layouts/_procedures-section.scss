@@ -1,0 +1,13 @@
+.procedures-section {
+  padding: 0 20px;
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 0 auto;
+  }
+  &__container {
+    overflow: hidden;
+  }
+}

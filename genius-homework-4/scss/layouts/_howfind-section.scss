@@ -1,0 +1,26 @@
+.howfind-section {
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  &__modal-background {
+    background-color: var(--brand-color-dark);
+    border-radius: 32px;
+  }
+  &__modal-background-img {
+    background-image: url(./../images/modal-window-bgd.png);
+    border-radius: 32px;
+  }
+  &__form-items {
+    margin-bottom: 16px;
+  }
+  &__map-decor {
+  }
+}

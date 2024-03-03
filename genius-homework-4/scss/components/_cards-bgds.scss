@@ -1,0 +1,22 @@
+.cards-bgds {
+  &__mask {
+    background-image: url(./../images/mask-photo.jpg);
+    border-radius: 4px 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__injection {
+    background-image: url(./../images/injection-photo.jpg);
+    border-radius: 4px 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__cleanface {
+    background-image: url(./../images/cleanface-photo.jpg);
+    border-radius: 4px 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

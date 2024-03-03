@@ -1,0 +1,110 @@
+.aboutus-section {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 20px 52px;
+    @media screen and (min-width: $bp-tablet) {
+      gap: 32px;
+      margin: 0;
+    }
+  }
+  &__items {
+    width: 100%;
+    max-width: 709px;
+  }
+  &__mobile-title {
+    font-weight: 700;
+  }
+  &__title {
+    width: 100%;
+    max-width: 529px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 40px 0;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 1.17;
+    margin-bottom: 16px;
+    font-weight: 400;
+    // &--accent {
+    // margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+  }
+  &__text:last-child {
+    margin-bottom: 0;
+  }
+  &__photos {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 40px;
+  }
+  &__photo {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      width: 100%;
+      max-width: 327px;
+      border-radius: 50%;
+    }
+  }
+  &__photo-before {
+    display: flex;
+  }
+  &__photo-after {
+    display: flex;
+    justify-content: end;
+  }
+  &__star-icon {
+    position: absolute;
+    left: 232px;
+    top: 374px;
+    fill: var(--brand-color-light);
+    animation-duration: 5s;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    @media screen and (min-width: $bp-desktop) {
+      left: 1212px;
+      top: 32px;
+    }
+  }
+  &__star-icon-small {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      left: 1213px;
+      top: 269px;
+      transform: rotate(23deg);
+      fill: var(--secondary-color-light);
+      animation-duration: 3s;
+      animation-name: rotate;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+  &__star-icon-big {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 336px;
+      left: 858px;
+      fill: var(--secondary-color-brand-dark);
+      animation-duration: 3s;
+      animation-name: rotate;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+}

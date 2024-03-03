@@ -1,0 +1,39 @@
+.order-call-button {
+  color: var(--primary-color-white);
+  background-color: var(--brand-color-light);
+  padding: 16px 32px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.17;
+  border: 2px solid var(--brand-color-light);
+  border-radius: 32px;
+  transition: 0.2s;
+  &:hover {
+    color: var(--brand-color-dark);
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+.modal-button {
+  display: block;
+  margin: 0 auto;
+  &:hover {
+    color: var(--primary-color-white);
+  }
+}
+.modal-btn-close {
+  position: absolute;
+  left: 649px;
+  top: 42px;
+  font-size: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  color: var(--primary-color-white);
+  &:hover {
+    cursor: pointer;
+  }
+}

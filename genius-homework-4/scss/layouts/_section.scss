@@ -1,0 +1,19 @@
+.section {
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 96px;
+  }
+  &__title {
+    font-family: play;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.17;
+    &--accent {
+      text-align: center;
+    }
+    @media screen and (min-width: $bp-tablet) {
+      line-height: 1.15;
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+}

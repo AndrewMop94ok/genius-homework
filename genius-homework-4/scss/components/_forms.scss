@@ -1,0 +1,25 @@
+.user-contacts {
+  &__items {
+    margin-bottom: 24px;
+  }
+  &__fields {
+    display: block;
+  }
+  &__field {
+    width: 100%;
+    max-width: 310px;
+    padding: 18px 32px;
+    color: var(--primary-color-white);
+    background-color: transparent;
+    border: 2px solid var(--secondary-color-light);
+    border-radius: 32px;
+    &::placeholder {
+      font-size: 13px;
+      color: var(--primary-color-white);
+    }
+    &:focus {
+      background-color: var(--secondary-color-light);
+      outline: none;
+    }
+  }
+}

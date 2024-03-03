@@ -1,0 +1,36 @@
+@import './utils/fonts';
+@import './utils/texts';
+@import './utils/center-gradient';
+/* All colors */
+@import './utils/variables';
+/* =========================================MAIN */
+@import './components/buttons';
+@import './components/carousel';
+@import './components/cards';
+@import './components/keyframes';
+@import './components/cards-bgds';
+@import './components/panigation';
+@import './base';
+@import './layouts/container';
+@import './layouts/section';
+/* ========================================HEADER */
+@import './layouts/header';
+@import './layouts/mobile-menu';
+/* =====================================HERO-SECTION */
+@import './layouts/hero-section';
+/* ====================================ABOUTUS SECTION */
+@import './layouts/aboutus-section';
+/* =====================================WHYWE SECTION */
+@import './layouts/whywe-section';
+/* =================================PROCEDURES SECTION */
+@import './layouts/procedures-section';
+/* ==================================HOWFIND SECTION */
+@import './layouts/howfind-section';
+@import './components/main-map';
+/* ==========================================FOOTER */
+@import './layouts/footer';
+/* ============================================MODAL-WINDOW */
+@import './utils/backdrop';
+@import './layouts/modal';
+@import './components/forms';
+@import './utils/visually-hidden';
