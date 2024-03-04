@@ -7,7 +7,7 @@
   background-color: var(--primary-color-white);
   transform: translateX(100%);
   transition: 0.3s;
-  z-index: 1;
+  z-index: 2;
 
   &.is-open {
     transform: translateX(0);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="./scss/mainmin.css" />
+    <link rel="stylesheet" href="./css/mainmin.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -161,6 +161,10 @@
               <div class="aboutus-section__photo-before">
                 <img
                   class="aboutus-section__photo"
+                  srcset="
+                    ./images/woman-photo-before.jpg    1x,
+                    ./images/woman-photo-before@2x.jpg 2x
+                  "
                   src="./images/woman-photo-before.jpg"
                   alt="фото дівчини до процедури"
                 />
@@ -185,6 +189,10 @@
                 </svg>
                 <img
                   class="aboutus-section__photo"
+                  srcset="
+                    ./images/woman-photo-after.jpg    1x,
+                    ./images/woman-photo-after@2x.jpg 2x
+                  "
                   src="./images/woman-photo-after.jpg"
                   alt="фото дівчини після процедури"
                 />
@@ -214,7 +222,7 @@
                 </p>
               </div>
               <div class="whywe-section__item">
-                <svg class="whywe-icon" width="48" height="48">
+                <svg class="whywe-section__icon" width="48" height="48">
                   <use href="./images/icons.svg#icon-cosmetikBottls"></use>
                 </svg>
                 <p class="whywe-section__text">
@@ -434,7 +442,10 @@
           <div class="footer__container">
             <div class="footer__logo">
               <a href="./index.html"
-                ><img src="./images/logo.svg" alt="Основний логотип сайту"
+                ><img
+                  class="footer__logo-img"
+                  src="./images/logo.svg"
+                  alt="Основний логотип сайту"
               /></a>
             </div>
             <nav class="footer__nav">
@@ -526,6 +537,7 @@
           </div>
           <img
             class="footer__img"
+            srcset="./images/footer-img.png 1x, ./images/footer-img@2x.png 2x"
             src="./images/footer-img.png"
             alt="флакони з косметикою"
           />

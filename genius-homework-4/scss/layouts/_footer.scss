@@ -24,7 +24,10 @@
     }
   }
   &__logo {
-    max-width: 57px;
+    margin-bottom: 42px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
   }
   &__menu {
     display: flex;
@@ -122,9 +125,16 @@
   &__img {
     display: none;
     @media screen and (min-width: $bp-tablet) {
+      display: block;
       position: absolute;
       right: 0;
       bottom: 0;
+    }
+  }
+  &__logo-img {
+    width: 57px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 83px;
     }
   }
 }
