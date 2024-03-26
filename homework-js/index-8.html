@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div data-widget-name="menu">Виберіть жанр</div>
+    <script>
+      let att = document.querySelector("[data-widget-name]");
+      if (att) {
+        let attValue = att.getAttribute("data-widget-name");
+        console.log("data-widget-name: ", attValue);
+      }
+    </script>
+  </body>
+</html>
