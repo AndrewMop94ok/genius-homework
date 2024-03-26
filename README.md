@@ -6,3 +6,4 @@
 [Homework-4js](https://andrewmop94ok.github.io/genius-homework/homework-js/JS/homework-4.js)<br>
 [Homework-5js](https://andrewmop94ok.github.io/genius-homework/homework-js/JS/homework-5.js)<br>
 [Homework-6js](https://andrewmop94ok.github.io/genius-homework/homework-js/JS/homework-6.js)<br>
+[Homework-7js](https://andrewmop94ok.github.io/genius-homework/homework-js/JS/homework-7.js)<br>
