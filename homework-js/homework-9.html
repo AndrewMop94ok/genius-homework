@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <button class="hide-btn" type="button">Hide this text</button>
+    <div class="text" id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta
+      odio ducimus quae molestias aliquid tenetur facilis nostrum illum ab
+      assumenda qui non, sit nemo vitae quam eius vero deleniti.
+    </div>
+    <ul id="childTree">
+      Child Tree
+      <li class="firstList">
+        Child list
+        <ul class="parent">
+          <li class="child">Andrew</li>
+          <li class="child">Roman</li>
+          <li class="child">Igor</li>
+          <li class="child">Bohdan</li>
+        </ul>
+      </li>
+      <li class="secondList">
+        Child list 2
+        <ul class="parent2">
+          <li class="child2">Dmitry</li>
+          <li class="child2">Yuriy</li>
+          <li class="child2">Alex</li>
+          <li class="child2">Denis</li>
+        </ul>
+      </li>
+    </ul>
+    <script>
+      // Напишіть такий JavaScript, щоб після натискання на кнопку button, елемент
+      // <div id="text"> зникав.
+      // const hideBtn = document.querySelector(".hide-btn");
+      // const text = document.querySelector("#text");
+
+      // hideBtn.addEventListener("click", hideText);
+      // function hideText() {
+      //   text.style.display = "none";
+      // }
+
+      // -----2----
+      // Напишіть такий код, щоб після натискання на кнопку, вона зникала.
+      // const hideBtn = document.querySelector(".hide-btn");
+
+      // hideBtn.addEventListener("click", hideThisBtn);
+      // function hideThisBtn() {
+      //   hideBtn.style.display = "none";
+      // }
+
+      // -----3----
+      // Створіть дерево, яке показує/приховує дочірні вузли при кліці
+
+      // const childTree = document.querySelector("#childTree");
+      // childTree.addEventListener("click", openTree);
+      // function openTree(event) {
+      //   if (event.target.tagName === "LI") {
+      //     const child = event.target.getElementsByTagName("ul")[0];
+      //     if (child) {
+      //       child.style.display =
+      //         child.style.display === "none" ? "block" : "none";
+      //     }
+      //   }
+      // }
+    </script>
+  </body>
+</html>
