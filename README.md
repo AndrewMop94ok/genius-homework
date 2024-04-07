@@ -9,3 +9,4 @@
 [Homework-7js](https://andrewmop94ok.github.io/genius-homework/homework-js/JS/homework-7.js)<br>
 [Homework-8js](https://andrewmop94ok.github.io/genius-homework/homework-js/index-8.html)<br>
 [Homework-9js](https://andrewmop94ok.github.io/genius-homework/homework-js/homework-9.html)<br>
+[Homework-12js](https://andrewmop94ok.github.io/genius-homework/homework-js/JS/homework-12.js)<br>
